@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Urvi V2.1 ❤️</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,sans-serif;background:linear-gradient(#ffd6e8,#fff);overflow-x:hidden}
+.page{display:none;min-height:100vh;padding:24px;justify-content:center;align-items:center;flex-direction:column;text-align:center}
+.active{display:flex}
+h1{color:#ff4da6;font-size:clamp(2rem,5vw,4rem);margin-bottom:20px}
+p{max-width:800px;line-height:1.8;font-size:1.05rem}
+button{padding:14px 24px;border:none;border-radius:999px;background:#ff4da6;color:#fff;margin-top:20px;cursor:pointer}
+.scrapbook{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;width:min(1100px,100%)}
+.scrapbook img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;background:#fff;padding:5px}
+.card{background:rgba(255,255,255,.75);padding:25px;border-radius:24px;max-width:950px}
+#gameCanvas{background:white;border-radius:20px;max-width:100%}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;margin-top:25px}
+.gallery img{width:100%;border-radius:18px}
+</style>
+</head>
+<body>
+
+<div class="page active" id="p1">
+<h1>Happy Birthday, Urvi ❤️</h1>
+<p>Every memory here was made with love.</p>
+<button onclick="next('p1','p2')">Begin The Journey ✨</button>
+</div>
+
+<div class="page" id="p2">
+<div class="card">
+<h1>Memory Wall 📸</h1>
+<div class="scrapbook">
+<img src="photo1.jpg"><img src="photo2.jpg"><img src="photo3.jpg"><img src="photo4.jpg">
+<img src="bambi.jpg"><img src="rapunzel.jpg"><img src="ladytramp.jpg"><img src="olaf.jpg">
+</div>
+<button onclick="next('p2','p3')">Next 💖</button>
+</div>
+</div>
+
+<div class="page" id="p3">
+<h1>Catch My Love 💖</h1>
+<p>Collect 20 hearts.</p>
+<canvas id="gameCanvas" width="400" height="500"></canvas>
+<p id="score">0 / 20</p>
+</div>
+
+<div class="page" id="p4">
+<div class="card">
+<h1>How I Fell For You 💌</h1>
+<p>Happy birthday my love 💗<br><br>
+I can’t tell u in words how happy I am today. First of all I would like to tell you that I love you a lot and u mean a lot in my life. You are the reason for me to actually come to that shit place we call college 😭💗
+                <br><br>
+
+                I will admit something today on your birthday… yes I think I liked you in 1st sem. Now don’t start jumping because I admitted it 😭. I say maybe because in reality I don’t really care for anyone like I do for u and I have been doing it since 1st sem.
+                <br><br>
+
+                And the boy who doesn’t remember what he ate in breakfast remembers what you wore on the first day of college… then I also think this mad boy fell in love the moment he saw you… and I am that mad boy 💖
+                <br><br>
+
+                I remember when I first noticed your smile… it literally took my breath away. The soft lips with that light shade of pink and that cute smile and that little tilt in your head when you smileeee… oh my god Urvii you kill it 😭💕
+                <br><br>
+
+                I am so happy to be a part of your life and a reason behind your smile.
+                <br><br>
+
+                If I had one wish… it would definitely be a lot of money and you smiling happily like a small child 😭💗. And yes money because realistically I need it to buy you clothes and food because I want to see you happy all my life.
+                <br><br>
+
+                The sound of your laugh feels like therapy to me and melody to my ears because it’s the most innocent and childish laugh I’ve ever heard. Don’t feel bad for me calling it childish… I mean it in the purest way possible 💖
+                <br><br>
+
+                You hold an innocence and love that genuinely makes me believe in pure love.
+                <br><br>
+
+                You won’t believe me but I remember every tiny detail about you… from the mole on your lips to the food you don’t like, the way you want to be left alone when angry and all the childishness you hide because of the world.
+                <br><br>
+
+                But believe me when I say this… I would never use you and I’ll always understand the baby side of you because that’s exactly what I love about you 💗
+                <br><br>
+
+                I know you need to stay tough around the world… but whenever you come to me, you can leave all that toughness behind and just be the goofy and soft person you always want to be.
+                <br><br>
+
+                Urvii… the time we’ve spent together is something no one else can understand. The fights, the laughs, the care and even the peace of simply sitting around each other genuinely feels like heaven.
+                <br><br>
+
+                You may think sometimes that it’s difficult to love you… but honestly it’s not.
+                <br><br>
+
+                You’re not like other girls.
+                You are different.
+                You are unique.
+                And that’s exactly what someone who truly loves you should understand 💖
+                <br><br>
+
+                Never think you are hard to love because there will always be one person named Archit Parikh following behind your footsteps just to comfort you and love you in the most unique way possible…
+                <br><br>
+
+                because you are not just another girl…
+                <br><br>
+
+                you are my girl 💗
+                <br><br>
+
+                I LOVEEEEEEE YOUUUUU A LOTTT URVIIII 😭💖
+                <br><br>
+
+                Now get ready for the next game kaju 😏💗<br><br><button onclick="next('p4','p5')">Next Game 💖</button>
+            
+</p>
+<div class="gallery">
+<img src="photo5.jpg"><img src="photo6.jpg"><img src="photo7.jpg">
+<img src="photo8.jpg"><img src="photo9.jpg"><img src="photo10.jpg">
+</div>
+</div>
+</div>
+
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="page" id="p5">
+<div class="card">
+<h1>Find Your Way To Urvi 💖</h1>
+<p>Guide the heart to Urvi 🌸</p>
+<div id="maze" style="position:relative;width:min(90vw,500px);height:500px;background:white;border:4px solid #ff8dc7;border-radius:20px;">
+<div id="mazePlayer" style="position:absolute;left:20px;top:20px;font-size:30px;">❤️</div>
+<div style="position:absolute;right:20px;bottom:20px;font-size:30px;">🌸</div>
+</div>
+<div style="margin-top:15px;">
+<button onclick="mup()">⬆️</button><br>
+<button onclick="mleft()">⬅️</button>
+<button onclick="mright()">➡️</button><br>
+<button onclick="mdown()">⬇️</button>
+</div>
+</div>
+</div>
+
+<div class="page" id="p6">
+<div class="card">
+<h1>You Feel Like Home 💗</h1>
+<p> <p>
+            Uk there a feeling in which u feel like u are at the peak of laziness and at the calmest of yourself , its where u don’t feel being judged or scared and you let your guard down and be the real u 💖
+            </p>
+
+            <p>
+            you can scream like mad dog while waking up , u can show the flaws u have and don’t have to hide it behind your strengths . u can just relax and do what u always wana do , yes that’s a feeling know as home for me its u 🏡💗
+            </p>
+
+            <p>
+            I don’t think I have ever been so clingy , clumsy like a child with anyone and that is one of my sides , yes I am too childish and the way u love the child in me after seeing that I am suree that I cannot love anyone like u 🥺💞
+            </p>
+
+            <p>
+            like I love u more than myself at this point . u are such a great person to be around the sense of emotional calm which runs down the entire nervous system is unexplainable it is the purest feeling I have ever felt ✨
+            </p>
+
+            <p>
+            you make me happy urvi , I am not sure how much happy I am able to keep after seeing the past some weeks but please know that I lovee you a lot 💗
+            </p>
+
+            <p>
+            if that feels less then I will tell you something that you entered my life so quietly and it changed so fast that now every small detail of my life carries a presence and a memory of yours 🌙
+            </p>
+
+            <p>
+            the moon feels less lonely as all my nights are yours , every song feels different because it reminds me of our special moments and the love we have for each other 🎶💖
+            </p>
+
+            <p>
+            you know there is something know as the mind palace , learned about it from the series , which means that your every thought and memory is stored in the heart and mind 🫶
+            </p>
+
+            <p>
+            and if this is true I am damn sure that every street and road of that mind palace of mine leads to u because u are most abundant feeling in my heart 💗
+            </p>
+
+            <p>
+            and everywhere in this palace your laughter echoes which gives me strength to smile and feel loved which I never felt ever in my life 🥺
+            </p>
+
+            <p>
+            ik it got kind of too poetic for u but just understand the feelings urvii 💞
+            </p>
+
+            <p>
+            uk the time we have spent with each other teasing one another , crying in front of each other and always holding hands no matter what comes in between us that is strongest bond urvii ✨
+            </p>
+
+            <p>
+            after all my day feels incomplete without u which is feeling I am having from past few weeks but its okay ik it’s a phase of us and it would end soon 💗
+            </p>
+
+            <p>
+            uk the day I confessed in the night while we were talking to each other in 3rd person perspective it was the most amazing night ever 🌙
+            </p>
+
+            <p>
+            I slept with a very broad smile on my face which I don’t think can be matched to anything else , it was the most amazing thing that happened to me 💖
+            </p>
+
+            <p>
+            urvi u are the most amazing thing that happened to me 🥺
+            </p>
+
+            <p>
+            I lovee you baby girl and u will always be my top priority in any case 💞
+            </p>
+
+            <p>
+            I am so much in loveeeeeeee that no one and nothing can change that feeling for me 💗
+            </p>
+</p>
+<div class="gallery">
+<img src="photo11.jpg"><img src="photo12.jpg"><img src="photo13.jpg">
+<img src="photo14.jpg"><img src="photo15.jpg"><img src="photo16.jpg">
+</div>
+<button onclick="next('p6','p7')">Next Game 💖</button>
+</div>
+</div>
+
+
+<div class="page" id="p7">
+<div class="card">
+<h1>Memory Game 💖</h1>
+<p>Match all the memories to continue ❤️</p>
+<div id="memoryGrid" style="display:grid;grid-template-columns:repeat(4,80px);gap:10px;justify-content:center;margin:20px 0;"></div>
+<p id="memoryStatus"></p>
+</div>
+</div>
+
+
+<div class="page" id="p8">
+<div class="card">
+<h1>No Matter What Happens... Choose Me Again 💌</h1>
+<p><p>
+                I wana be there on all your birthdays celebrating this special day of yours...
+            </p>
+
+            <p>
+                I am really happy for the day when u sensed that u had something for me because I am the luckiest guy to be chosen by an amazing girl like you 💖
+            </p>
+
+            <p>
+                Urvii, I hope u choose me every time because I will be choosing u every single day of my life.
+            </p>
+
+            <p>
+                I see a future with u which is filled with joy and happiness and I would work as hard as I can to make this work.
+            </p>
+
+            <p>
+                I know our journey will be difficult and we will have a thousand fights, but at the end of the day it is always your arms where I will want to be.
+            </p>
+
+            <p>
+                I don't dream about a perfect life with you.
+                I dream about a real one.
+            </p>
+
+            <p>
+                I dream about the days when we are tired after work and still ask each other how our day was.
+            </p>
+
+            <p>
+                I dream about the arguments we will have and still choosing each other even when it becomes difficult.
+            </p>
+
+            <p>
+                I want to see your hair turn silver and your smile gain those little lines that come from a lifetime of laughter.
+            </p>
+
+            <p>
+                I want us to grow old enough that we forget small things but never forget each other.
+            </p>
+
+            <p>
+                One day I hope we sit together on a quiet evening looking back at a life that wasn't perfect but was filled with love.
+            </p>
+
+            <p>
+                I don't want a hundred stories.
+                I just want one story...
+                and I want that story to be with you.
+            </p>
+
+            <p>
+                I know life changes and situations change but no matter what happens I will always want happiness for you above everything else.
+            </p>
+
+            <p>
+                I am really happy that I am able to express my love for you and believe me Urvii, I will cherish you forever.
+            </p>
+
+            <p>
+                I hope all these games and letters made you smile 💖
+            </p>
+
+            <p>
+                This website is kind of yours forever.
+            </p>
+
+            <p>
+                Whenever you feel sad, lonely, stressed or miss me, come back here and read these letters again.
+            </p>
+
+            <p>
+                Because every memory, every photo and every word written here was written with love.
+            </p>
+
+            <p>
+                Happy Birthday Baby ❤️
+            </p>
+
+            <p>
+                I loveeeeeee youuuuu a lottttttt sweetheart 💖
+            </p>
+</p>
+<div class="gallery">
+<img src="photo17.jpg"><img src="photo18.jpg"><img src="photo19.jpg">
+<img src="photo20.jpg"><img src="photo21.jpg"><img src="photo23.jpg">
+<img src="photo24.jpg"><img src="photo25.jpg">
+</div>
+<button onclick="next('p8','p9')">final say  ❤️</button>
+</div>
+</div>
+
+<div class="page" id="p9">
+<div class="card">
+<h1>Happy Birthday Urvi ❤️</h1>
+<p>Thank you for being the most beautiful part of my life.</p>
+<p>I will always choose you. 💖</p>
+</div>
+</div>
+
+
+<script>
+function next(a,b){
+document.getElementById('bgMusic').play();
+document.getElementById(a).classList.remove('active');
+document.getElementById(b).classList.add('active');
+}
+
+const c=document.getElementById('gameCanvas');
+const x=c.getContext('2d');
+let player=200,score=0,hearts=[];
+
+function spawn(){hearts.push({x:Math.random()*380,y:-20});}
+
+function draw(){
+if(!document.getElementById('p3').classList.contains('active')) return requestAnimationFrame(draw);
+x.clearRect(0,0,400,500);
+x.font="30px serif";
+x.fillText("💖",player,470);
+hearts.forEach((h,i)=>{
+h.y+=3;
+x.fillText("💕",h.x,h.y);
+if(Math.abs(h.x-player)<20 && Math.abs(h.y-470)<20){
+hearts.splice(i,1);score++;
+document.getElementById('score').innerText=score+" / 20";
+if(score>=20){
+next('p3','p4');
+}
+}
+});
+requestAnimationFrame(draw);
+}
+c.addEventListener('mousemove',e=>{
+const r=c.getBoundingClientRect();
+player=e.clientX-r.left;
+});
+c.addEventListener('touchmove',e=>{
+const r=c.getBoundingClientRect();
+player=e.touches[0].clientX-r.left;
+});
+setInterval(spawn,700);
+draw();
+
+let mx=20,my=20;
+function renderMaze(){
+ const p=document.getElementById('mazePlayer');
+ if(!p) return;
+ p.style.left=mx+'px';
+ p.style.top=my+'px';
+ if(mx>420 && my>420){ next('p5','p6'); }
+}
+function mup(){my=Math.max(0,my-20);renderMaze();}
+function mdown(){my=Math.min(460,my+20);renderMaze();}
+function mleft(){mx=Math.max(0,mx-20);renderMaze();}
+function mright(){mx=Math.min(460,mx+20);renderMaze();}
+
+
+const memoryItems=['💖','💖','🌸','🌸','💕','💕','✨','✨','🫶','🫶','😍','😍','🎂','🎂','🥰','🥰'];
+memoryItems.sort(()=>Math.random()-0.5);
+const memoryGrid=document.getElementById('memoryGrid');
+let firstCard=null,lockBoard=false,matched=0;
+
+if(memoryGrid){
+memoryItems.forEach(item=>{
+ const card=document.createElement('button');
+ card.style.width='80px';
+ card.style.height='80px';
+ card.style.fontSize='28px';
+ card.dataset.value=item;
+ card.innerHTML='❓';
+
+ card.onclick=()=>{
+   if(lockBoard || card.innerHTML!== '❓') return;
+
+   card.innerHTML=item;
+
+   if(!firstCard){
+      firstCard=card;
+      return;
+   }
+
+   if(firstCard.dataset.value===card.dataset.value){
+      matched+=2;
+      firstCard=null;
+
+      if(matched===16){
+        document.getElementById('memoryStatus').innerHTML='You collected every memory ❤️';
+        setTimeout(()=>next('p7','p8'),1200);
+      }
+   }else{
+      lockBoard=true;
+      setTimeout(()=>{
+         firstCard.innerHTML='❓';
+         card.innerHTML='❓';
+         firstCard=null;
+         lockBoard=false;
+      },700);
+   }
+ };
+ memoryGrid.appendChild(card);
+});
+}
+
+</script>
+
+</body>
+</html>
