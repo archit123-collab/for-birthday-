@@ -384,7 +384,7 @@ function renderMaze(){
  if(!p) return;
  p.style.left=mx+'px';
  p.style.top=my+'px';
- if(mx>420 && my>420){ next('p5','p6'); }
+ if(mx>250 && my>250){ next('p5','p6'); }
 }
 function mup(){my=Math.max(0,my-20);renderMaze();}
 function mdown(){my=Math.min(460,my+20);renderMaze();}
